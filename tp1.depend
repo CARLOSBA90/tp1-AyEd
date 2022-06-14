@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1655084337 source:c:\users\cepr1_000\desktop\carlos\algoritmos y estructuras\codigo\entorno\tp1\main.cpp
+	<windows.h>
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<vector>
+
+1655085159 source:c:\entorno\tp1\main.cpp
+	<windows.h>
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<vector>
+	<string>
+
