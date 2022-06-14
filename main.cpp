@@ -28,10 +28,8 @@ struct venta {
   struct fecha;
 };
 
-const MAX_REGS = 800;
-const MAX_VENS = 100;
-
-fstream ventasAF(NOMBRE_ARCHIVO);
+const int MAX_REGS = 800;
+const int MAX_VENS = 100;
 
 int cantVtas = 0;
 string line;
@@ -43,9 +41,9 @@ vector<vendedor> vrVendedores;
 
 
 int main(){
-//ifstream VentasAF("VentasFerreteria.txt");
+fstream ventasAF(NOMBRE_ARCHIVO);
 
-cout<<"Mensaje a imprimir";
+cout<<"prueba de salida";
 
   //ProcVentas(VentasAF,vrVendedores,cantVtas);
   //ListadoVtasAgrupVen(SalidaAF,vrVendedores,vrTotales);
@@ -59,13 +57,13 @@ cout<<"Mensaje a imprimir";
 void ProcVentas(ifstream VentasAF,vector<vendedor> vrVendedores,int  cantVtas){
 
 /*
-LeeUnaVta(VentasAF, rVendedor), el cual lee una componente de datos del archivo y los almacena en una estructura interna. La función retorna un boolean, verdadero, si la lectura fue exitosa, caso contrario, falso.
-ProcVentas(VtasAF, vrVtas, cVtas) //Carga c/u. de los datos leídos en vrVtas. Se debe invocar a la función LeeUnaVta. Devuelve la cantidad de registros leídos en cVtas.
-OrdxBur(vrVtas, card); // Ord. x código de vendedor creciente.
+LeeUnaVta(VentasAF, rVendedor), el cual lee una componente de datos del archivo y los almacena en una estructura interna. La funcion retorna un boolean, verdadero, si la lectura fue exitosa, caso contrario, falso.
+ProcVentas(VtasAF, vrVtas, cVtas) //Carga c/u. de los datos leidos en vrVtas. Se debe invocar a la funcion LeeUnaVta. Devuelve la cantidad de registros leidos en cVtas.
+OrdxBur(vrVtas, card); // Ord. x codigo de vendedor creciente.
 OrdxBur(vrTot, card); //Ord. x cantidad total de cada vendedor decrec.
 OrdxBur(card, vrTot); //Ord. x importe total de cada vendedor decrec.
-IntCmb(vrVtas[i], vrVtas[i+1]); //Debe invocarse dentro de la función OrdxBur.
-IntCmb(vrTot[i], vrTot[i+1]);    //Debe invocarse dentro de la función OrdxBur.
+IntCmb(vrVtas[i], vrVtas[i+1]); //Debe invocarse dentro de la funcion OrdxBur.
+IntCmb(vrTot[i], vrTot[i+1]);    //Debe invocarse dentro de la funcion OrdxBur.
 
 */
 
